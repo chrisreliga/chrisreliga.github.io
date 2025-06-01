@@ -42,6 +42,7 @@ header::before {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* z-index: 3; */
 }
 
@@ -603,5 +604,23 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 956px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .nav-logo h2 {
+    font-size: 5rem;
+    outline: #fff;
+  }
+
+  header ul li {
+    display: none;
   }
 }
